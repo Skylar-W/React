@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>react 基础使用</title>
+  <link rel="stylesheet" href="../base.css">
+</head>
+<body>
+  <div id="app"></div>
+  <!-- 1.引入js文件 -->
+  <script src="./node_modules/react/umd/react.development.js"></script>
+  <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>
+  <script>
+    // 2.创建节点
+    /* 
+      参数1: 节点名称
+      参数2: 节点属性
+      参数3...n: 子节点
+    */
+    const nodeH1 = React.createElement('h1', null, '欢迎学习React框架开发!')
+    //3.渲染节点
+    /* 
+      参数1: 要渲染的节点
+      参数2: 挂载的位置
+    */
+    ReactDOM.render(nodeH1, document.getElementById('app'))
+  </script>
+</body>
+</html>
